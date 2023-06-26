@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;1,300&family=Playfair+Display:wght@400;500;600&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@300;400&display=swap');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+    box-sizing: border-box;
+    transition: 0.5s ease-in-out;
+}
+
+.font-jost-200 {
+    font-family: jost;
+    font-weight: 200;
+}
+
+.font-jost-300 {
+    font-family: jost;
+    font-weight: 300;
+}
+
+.font-rale-300 {
+  font-family: raleway;
+  font-weight: 300;
+}
+
+.font-rale-400 {
+  font-family: raleway;
+  font-weight: 400;
+}
+
+.font-rale-500 {
+  font-family: raleway;
+  font-weight: 500;
+}
+
+.font-rale-600 {
+  font-family: raleway;
+  font-weight: 600;
+}
+
+.font-rale-700 {
+  font-family: raleway;
+  font-weight: 700;
+}
+
+.font-rale-800 {
+  font-family: raleway;
+  font-weight: 800;
+}
+
+.font-pop-300 {
+  font-family: poppins;
+  font-weight: 300;
+}
+
+.font-pop-400 {
+  font-family: poppins;
+  font-weight: 400;
+}
+
+.font-pop-500 {
+  font-family: poppins;
+  font-weight: 500;
+}
+
+
+
+.font-jost-italic {
+    font-family: jost;
+    font-weight: 200;
+}
+
+.font-jost-400 {
+    font-family: jost;
+    font-weight: 400;
+}
+
+.font-raleway-light {
+    font-family: raleway;
+    font-size: 300;
+}
+
+.font-raleway {
+    font-family: raleway;
+    font-weight: 400;
+}
+
+.max-w-9xl {
+    max-width: 100rem;
+}
+
+.left-100 {
+  left: 22rem;
+}
+
+:root {
+  --nprogress-color: #9F2B68; /* Set your desired color */
+}
+
+#nprogress .bar {
+  background: var(--nprogress-color) !important;
+}
+
+.fixed-border {
+  width: 100vh;
+  height: 100vh;
+  background-color: rgb(216, 59, 106);
+  top: 0;
+}
+
+
+
+@keyframes ldio-4tg0x8eck55 {
+  0% {
+    top: 96px;
+    left: 96px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 38px;
+    left: 38px;
+    width: 116px;
+    height: 116px;
+    opacity: 0;
+  }
+}.ldio-4tg0x8eck55 div {
+  position: absolute;
+  border-width: 4px;
+  border-style: solid;
+  opacity: 1;
+  border-radius: 50%;
+  animation: ldio-4tg0x8eck55 1s cubic-bezier(0,0.2,0.8,1) infinite;
+}.ldio-4tg0x8eck55 div:nth-child(1) {
+  border-color: #e90c59;
+  animation-delay: 0s;
+}
+.ldio-4tg0x8eck55 div:nth-child(2) {
+  border-color: #f0466e;
+  animation-delay: -0.5s;
+}
+.loadingio-spinner-ripple-u270wgfwvs {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: none;
+}
+.ldio-4tg0x8eck55 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.ldio-4tg0x8eck55 div { box-sizing: content-box; }
+
+
+@keyframes ldio-0x3jmyk4nv3c-o {
+    0%    { opacity: 1; transform: translate(0 0) }
+   49.99% { opacity: 1; transform: translate(20px,0) }
+   50%    { opacity: 0; transform: translate(20px,0) }
+  100%    { opacity: 0; transform: translate(0,0) }
+}
+@keyframes ldio-0x3jmyk4nv3c {
+    0% { transform: translate(0,0) }
+   50% { transform: translate(20px,0) }
+  100% { transform: translate(0,0) }
+}
+.ldio-0x3jmyk4nv3c div {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.ldio-0x3jmyk4nv3c div:nth-child(1) {
+  background: #e90c59;
+  animation: ldio-0x3jmyk4nv3c 1s linear infinite;
+  animation-delay: -0.4s;
+}
+.ldio-0x3jmyk4nv3c div:nth-child(2) {
+  background: #f04696;
+  animation: ldio-0x3jmyk4nv3c 1s linear infinite;
+  animation-delay: 0s;
+}
+.ldio-0x3jmyk4nv3c div:nth-child(3) {
+  background: #e90c59;
+  animation: ldio-0x3jmyk4nv3c-o 1s linear infinite;
+  animation-delay: -0.4s;
+}
+.loadingio-spinner-dual-ball-zfyaefd1apk {
+  width: 30px;
+  height: 10px;
+  display: inline-block;
+  overflow: hidden;
+  background: none;
+}
+.ldio-0x3jmyk4nv3c {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.ldio-0x3jmyk4nv3c div { box-sizing: content-box; }
+
+
+.replica-shake {
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(0); }
+  75% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+
+.page-container {
+  transition: opacity 500ms;
+}
+
+.animate-fade {
+  opacity: 0;
+}
+
+.animate-appear {
+  opacity: 1;
+}
