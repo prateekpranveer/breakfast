@@ -7,9 +7,11 @@ import { CLOSE_CREATE_MODAL } from "@/store/createStreak";
 import Selection from "./Selection";
 import bfs from "@/axios";
 import { RootState } from "@/store/store";
+import SubscriptionComponent from "./SubscriptionComponent";
 
 const NewStreakModal = () => {
-  const openCreate = useSelector((state: RootState) => state.streakCreate);
+  const {openCreateModal} = useSelector((state: RootState) => state.streakCreate);
+  console.log(openCreateModal)
   const {selected_timeline} = useSelector((state: RootState) => state.range);
   const auth = useSelector((state: RootState) => state.auth);
   const dispatch = useDispatch();
@@ -27,7 +29,7 @@ const NewStreakModal = () => {
 
   return (
     <div className="font-jost-300">
-      {openCreate.openCreateModal && (
+      {openCreateModal && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
           <motion.div
             initial={{ opacity: 0, scale: 0.7 }}
@@ -48,14 +50,10 @@ const NewStreakModal = () => {
               <X size={14} color="gray" />
             </div>
 
-            <div className="text-lg font-bold mb-4">
+            <div className="text-2xl mb-3">
               Let's Create a New Streak!
             </div>
-
-            <h1 className="mb-2">Select a Streak Duration!</h1>
-
-            <Selection />
-
+            <SubscriptionComponent/>
             <button
               onClick={() => {
                 handleCreateNewStreak();
@@ -63,9 +61,9 @@ const NewStreakModal = () => {
                   type: CLOSE_CREATE_MODAL,
                 });
               }}
-              className="border-black text-sm font-jost-400 mt-8 px-4 py-2 rounded-md border bg-pink-600 tracking-wide text-white"
+              className="text-sm font-pop-300 tracking-wider mt-8 px-6 py-4 rounded-md border bg-pink-600 text-white"
             >
-              Proceed to Create
+              PROCEED TO CREATE
             </button>
           </motion.div>
         </div>

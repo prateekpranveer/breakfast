@@ -16,10 +16,10 @@ const Header = () => {
   const router = useRouter()
   const dispatch = useDispatch()
   return (
-    <Xyz className='max-w-8xl mr-auto shadow-md bg-white py-8'>
+    <Xyz className='max-w-6xl mx-auto px-12 bg-white py-8'>
       <div className='flex justify-between max-w-6xl items-center mx-auto'>
         <Max className='flex items-center'>
-          <BSLogo className='cursor-pointer' onClick={() => router.push('/')}><img  width={250} src="/logo.png" alt="" /></BSLogo>
+          <BSLogo className='cursor-pointer' onClick={() => router.push('/')}><img  width={250} src="/logo.svg" alt="" /></BSLogo>
           <Location/>
         </Max>
       
@@ -39,7 +39,6 @@ const Header = () => {
           }
         }} className='flex font-jost-400 text-gray-600 space-x-3 px-2 py-1 items-center cursor-pointer'>
           <div className='min-w-fit mr-4'>
-          <Link className='min-w-fit' href="/explorefasts"><h1 className='font-pop-300 text-sm tracking-wider'>EXPLORE BREAKFASTS</h1></Link>
         </div>
           <p className='font-jost-300'>{auth.authUserName}</p>
           <Settings color='gray'/>

@@ -22,7 +22,7 @@ const ExtendStreakButton = () => {
           dispatch({
             type: OPEN_CREATE_MODAL
           })
-        }} className='text-sm px-2 py-1 border font-jost-400 flex items-center bg-sky-600 text-white rounded-md space-x-2'><span>Extend</span><Plus size={12}/><span></span></button>
+        }} className=''>Extend Streak<span></span></button>
     </div>
   )
 }

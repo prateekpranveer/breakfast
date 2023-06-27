@@ -48,7 +48,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     }
     setTimeout(() => {
       setprime(primeLocal);
-    }, 1000);
+    }, 4000);
   }, []);
 
 

@@ -39,7 +39,7 @@ const withAuth = (WrappedComponent) => {
             setloading(false);
           } else {
             // User is not authenticated, redirect to the login page or a public route
-            router.replace("/auth");
+            router.replace("/login");
           }
         } catch (error) {
           console.log("Error authenticating user:", error);

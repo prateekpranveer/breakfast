@@ -41,9 +41,9 @@ const Login = () => {
   return (
     <div>  
         <>
-          <div className="min-w-fit max-w-6xl flex justify-center mx-auto px-4">
-            <div className="space-y-4 flex flex-col items-center max-w-fit p-32 bg-slate-50 rounded-lg">
-              <div className="border rounded-md border-gray-500 px-4 py-2 max-w-fit">
+          <div className="min-w-fit max-w-6xl flex justify-center mx-auto p-24">
+            <div className="flex space-y-6 flex-col w-2/3 items-center rounded-lg">
+              <div className="border border-gray-500 px-4 py-5 w-full">
                 <input
                   onChange={(e) => setemail(e.target.value)}
                   className="bg-transparent focus:outline-none"
@@ -53,7 +53,7 @@ const Login = () => {
                   placeholder="email id"
                 />
               </div>
-              <div className="border rounded-md border-gray-500 px-4 py-2 max-w-fit">
+              <div className="border border-gray-500 px-4 py-5 w-full">
                 <input
                   onChange={(e) => setpassword(e.target.value)}
                   className="bg-transparent focus:outline-none"
@@ -65,7 +65,7 @@ const Login = () => {
               </div>
 
 
-              <div className="border-2 rounded-md w-full items-center flex justify-center bg-pink-600 text-white font-rale-400 text-sm py-3 border-black">
+              <div className="border-2 w-full items-center flex justify-center bg-pink-700  text-white font-rale-400 py-6">
                 <button onClick={handleLogin} className="tracking-wide">
                   Submit
                 </button>

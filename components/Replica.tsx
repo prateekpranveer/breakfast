@@ -1,6 +1,6 @@
 import { ADD_DATE, MODAL_OPEN } from '@/store/addFast'
 import React from 'react'
-import { Plus } from 'react-feather'
+import { Edit, Edit2, Plus } from 'react-feather'
 import { useDispatch } from 'react-redux'
 import ChoiceModal from './ChoiceModal'
 import { useSelector } from 'react-redux'
@@ -33,10 +33,10 @@ const Replica = ({name,date}:any) => {
           })
         }} className='flex items-center font-jost-400 cursor-pointer'>
             <div className='left'>
-                <h1 className={`${`text-sm text-white rounded-sm px-2 py-1 bg-green-500`}`}>{date.month}  {date.date}</h1>
+                <h1 className={`${`text-sm text-white rounded-sm px-2 py-2 ${!name?'bg-red-500':'bg-green-400'}`}`}>{date.month}  {date.date}</h1>
             </div>
             <div className='right'>
-                <h1 className='text-sm px-2 py-1 rounded-sm bg-gray-100 flex items-center space-x-2 min-w-fit'><span>{name}</span><span><Plus size={14}/></span></h1>
+                <h1 className='text-xs font-mono-400 px-2 py-2 rounded-sm bg-white border shadow flex items-center space-x-2 min-w-fit'><span>{name?name:'Add Breakfast'}</span><span>{!name?<><Plus size={14}/></>:<><Edit size={12}/></>}</span></h1>
             </div>
         </div>
         <ChoiceModal data = {foodList}/>

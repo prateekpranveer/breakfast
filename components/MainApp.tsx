@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import AllergyPage from "./Disclaimer/AllergyPage";
 import AddressPage from "./Disclaimer/AddressPage";
 import DisclaimerPage from "./Disclaimer/DisclaimerPage";
+import RegisterPage from "./Disclaimer/RegisterPage";
 
 
 const MainApp = ({ setprime }:any) => {
@@ -35,7 +36,12 @@ const MainApp = ({ setprime }:any) => {
 
       {currentPage === "allergy" && (
         <div className={`page-container ${animationClass}`}>
-          <AllergyPage setprime={setprime} />
+          <AllergyPage handlePageTransition={handlePageTransition} />
+        </div>
+      )}
+      {currentPage === "register" && (
+        <div className={`page-container ${animationClass}`}>
+          <RegisterPage setprime={setprime} />
         </div>
       )}
     </div>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { ArrowRight, Plus } from "react-feather";
+import { Plus } from "react-feather";
 import Replica from "./Replica";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
@@ -90,11 +90,8 @@ const Payfor = () => {
   }
 
   return (
-    <div className="mt-12">
+    <div className="">
       <div>
-        <h1 className="font-jost-400 text-pink-700 mt-2">
-          Start your day with a delicious and energizing breakfast experience!
-        </h1>
       </div>
 
       {pureUser ? (
@@ -117,32 +114,6 @@ const Payfor = () => {
             <div className="flex mt-4 justify-between items-center font-jost-400 text-gray-600 mb-12">
               <div className="flex items-center space-x-4">
                 <div>
-                  <div className="flex space-x-2 items-center">
-                    <h1>Active Streak: </h1>
-                    /* <p className="text-sm py-0.5 px-2 rounded-sm bg-gray-600 text-white">
-                      {streakSize} Days
-                    </p> */
-                  </div>
-                </div>
-              </div>
-
-              <div className="text-sm font-jost-400 text-red-500">
-                <h1>The Breakfast for Today will be locked by 12:00 P.M.</h1>
-              </div>
-
-              <div className="flex space-x-2 items-center">
-                <p>
-                  Total | Rs{" "}
-                  {streakPrice ? streakPrice : "00"}.00
-                </p>
-                <div className="flex items-center space-x-2">
-                  <span></span>
-                  <span
-                    onClick={() => router.push("/checkout")}
-                    className="bg-pink-600 rounded-full p-2 shadow-md cursor-pointer"
-                  >
-                    <ArrowRight color="white" size={15} />
-                  </span>
                 </div>
               </div>
             </div>
@@ -153,8 +124,6 @@ const Payfor = () => {
                   <Replica date={p.defaultDate} name={p.foodTaken?.foodName} />
                 </div>
               ))}
-
-              <ExtendStreakButton />
             </div>
           </div>
         </>

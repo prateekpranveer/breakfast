@@ -8,6 +8,8 @@ import Footer from "@/components/Footer";
 import NewStreakModal from "@/components/NewStreakModal";
 import withAuth from "@/middlewares/authMiddleware";
 import TriggerShowModal from "@/components/TriggerShowModal";
+import StreakTriggerDetails from "@/components/StreakTriggerDetails";
+import AlertModal from "@/components/AlertModal";
 
 const index = () => {
   const [foodList, setfoodList] = React.useState();
@@ -23,13 +25,15 @@ const index = () => {
   return (
     <div>
       <div className="max-w-6xl px-12 mx-auto">
-        <Payfor />
+        <StreakTriggerDetails/>
+        <Payfor/>
       </div>
+      <AlertModal isOpen={true} onClose={true} message={'This is a title box'} />
       <TriggerShowModal />
-      <div className="mt-20">
+      <NewStreakModal/>
+      <div className="mt-10 mb-64">
         <BreakfastShow />
       </div>
-      <NewStreakModal />
       <Footer />
     </div>
   );

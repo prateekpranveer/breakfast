@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight } from "react-feather";
+import { ArrowRight, Star } from "react-feather";
 import bfs from "@/axios";
 import Spinner from "./Spinner";
 
@@ -34,25 +34,34 @@ const BreakfastShow = () => {
       ) : (
         <>
           <div className="mx-auto max-w-6xl px-12">
-            <h1 className="mb-8 text-2xl font-jost-300">
+            {/* <h1 className="mb-8 text-2xl font-jost-300">
               Our Top Picked Breakfasts
-            </h1>
-            <div className="flex flex-wrap gap-4">
+            </h1> */}
+            {/* <div className="flex flex-wrap gap-4">
               {allBreakfast?.map((p,id) => (
-                <div key={id} className="w-48">
+                <div key={id} className="w-80 shadow-lg border flex space-x-2 rounded-md">
                   <img
-                    width={170}
-                    className="rounded-md"
+                    width={60}
+                    className="rounded-md mr-4"
                     src={p.foodImage}
                     alt=""
                   />
-                  <h1 className="font-jost-400 text-md mt-2">{p.foodName}</h1>
+                  <div className="">
+                  <h1 className="font-pop-300 text-sm text-md mt-2">{p.foodName}</h1>
+                  <div className="flex mt-1">
+                  <Star size={14} color="gray"/>
+                  <Star size={14} color="gray"/>
+                  <Star size={14} color="gray"/>
+                  <Star size={14} color="gray"/>
+                  <Star size={14} color="gray"/>
+                  </div>
+                  </div>
                 </div>
               ))}
-            </div>
+            </div> */}
             <div className="mt-12 text-5xl font-pop-300 tracking-widest flex space-x-6 items-center">
-              <h1>EXPLORE MORE BREAKFASTS </h1>
-              <span className="p-6 bg-pink-700 text-white rounded-full">
+              <h1>EXPLORE BREAKFASTS </h1>
+              <span className="p-4 bg-pink-500 cursor-pointer hover:bg-pink-800 shadow-lg text-white rounded-full">
                 <ArrowRight />
               </span>
             </div>
